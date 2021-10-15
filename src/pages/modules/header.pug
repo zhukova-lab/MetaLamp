@@ -1,0 +1,13 @@
+- let headerNavMenu = ['О нас','Услуги','Вакансии','Новости','Соглашения']
+
+header.header 
+    .header-wrapper.container 
+        include logo
+        nav.header-nav 
+            ul.header-nav-list
+                for value in headerNavMenu
+                    li.header-nav-item 
+                        a.header-nav-link(href="link")=value 
+        include button 
+        +button('войти','button-entry')
+        +button('зарегистрироваться','button-sing-up') 
