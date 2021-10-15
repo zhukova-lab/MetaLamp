@@ -4,12 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": " webpack --mode development",
+    "build": " webpack --mode production",
+    "watch": " webpack --mode development --watch",
+    "start": " webpack-dev-server --mode development --open"
   },
   "author": "Zhukova Nina avokadotata@gmail.com",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.4.0",
+    "html-webpack-plugin": "^5.4.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.1.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^3.3.0",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
   }
 }
