@@ -1,13 +1,22 @@
-- let headerNavMenu = ['О нас','Услуги','Вакансии','Новости','Соглашения']
+mixin navLinks(name,className)
+    if className
+        a(href="link").header-nav-link.expand=name 
+            i(class="nav-link-icon material-icons")= className
+    else 
+        a(href="link").header-nav-link=name 
+
 
 header.header 
     .header-wrapper.container 
         include logo
         nav.header-nav 
             ul.header-nav-list
-                for value in headerNavMenu
                     li.header-nav-item 
-                        a.header-nav-link(href="link")=value 
+                        +navLinks('О нас','')
+                        +navLinks('Услуги','expand_more')
+                        +navLinks('Вакансии','')
+                        +navLinks('Новости','')
+                        +navLinks('Соглашения','expand_more')
         include button 
         +button('войти','button-entry')
         +button('зарегистрироваться','button-sing-up') 

@@ -9,6 +9,9 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './index.js',
+        vendors: [
+            "webpack-material-design-icons"
+            ]
     },
     output: {
         filename: '[name].[contenthash].js',
