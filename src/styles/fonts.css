@@ -1,6 +1,6 @@
 @import "~normalize.css";
 @font-face {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: normal;
 	src: local('Montserrat'),
@@ -10,7 +10,7 @@
 };
 
 @font-face {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: bold;
 	src: local('Montserrat'),
